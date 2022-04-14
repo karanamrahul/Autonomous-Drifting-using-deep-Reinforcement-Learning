@@ -11,7 +11,7 @@ Created on Mon April 11 2022
 
 @brief Implementation of Soft Actor Critic (SAC) agent for Autonomous Drifting using Deep Reinforcement Learning.
 
-I have used the code from the following link to implement the SAC algorithm but with slight modifications to make it work for my problem.
+I have written code following from the original Paper to implement the SAC algorithm but with slight modifications to make it work for my problem.
 
 References: https://arxiv.org/abs/1801.01290
 """
