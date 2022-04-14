@@ -22,6 +22,57 @@ minimizing entropy (measure of randomness in the policy - more exploration)
 
 
 
+## Environment
+
+- Ubuntu 20.04
+- Conda : Package and environment manager
+- Python 3.8
+- Pytorch
+- Pygame
+
+## Installation steps for CARLA simulator
+
+We are using CARLA [0.9.5](https://carla.readthedocs.io/en/0.9.5/getting_started/) as our version for our simulation.
+
+Please download the the simulator from this [drive](https://drive.google.com/file/d/1CefYTLF48YKU5sPkQXsCScsG3fRiY0Gv/view?usp=sharing)
+
+Extract the folder in your Downloads directory.
+
+```
+Add Path to your bash file
+
+export PYTHONPATH=$PYTHONPATH:~/Downloads/CARLA_DRIFT_0.9.5/PythonAPI/carla/dist/carla-0.9.5-py3.5-linux-x86_64.egg
+export PYTHONPATH=$PYTHONPATH:~/Downloads/CARLA_DRIFT_0.9.5/PythonAPI/carla/
+
+```
+
+
+To open and run the simulator please enter the below commands
+open a new terminal
+```
+cd Downloads/CARLA_DRIFT_0.9.5
+./CarlaUE4.sh /Game/Carla/ExportedMaps/simple
+```
+
+This will show up the map.If you want to spawn vehicles and manually control the vehicle in the above 
+map please enter the below commands.
+
+```
+Open a New terminal
+cd Downloads/CARLA_DRIFT_0.9.5/PythonAPI/examples
+./spawn_npc.py
+```
+
+This will spawn vehicels in the map.
+
+To control a vehicle in the environment, enter the below commands.
+```
+Open a New terminal
+cd Downloads/CARLA_DRIFT_0.9.5/PythonAPI/examples
+./manual_control.py
+```
+
+
 
 #TODO
 
