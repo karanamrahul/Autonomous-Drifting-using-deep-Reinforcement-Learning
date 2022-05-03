@@ -38,6 +38,11 @@ Please download the the simulator from this [drive](https://drive.google.com/fil
 
 Extract the folder in your Downloads directory.
 
+If you have a dual GPU setup , please enter the following command to enable your secondary graphics card as the primary one.
+```
+export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"
+```
+
 ```
 Add Path to your bash file
 
